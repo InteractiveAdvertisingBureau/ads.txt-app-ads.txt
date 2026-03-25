@@ -53,7 +53,7 @@ Jill Wittkopp, Sr. Director Product, IAB Tech Lab
     - 4.6 [INVENTORYPARTNERDOMAIN REFERRAL](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#46-inventorypartnerdomain-referral)	
     - 4.7 [OWNERDOMAIN USAGE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#47-ownerdomain-usage)
     - 4.8 [MANAGERDOMAIN USAGE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#48-managerdomain-usage)
-    - 4.9 {FILE WITHOUT AUTHORIZED ADVERTISING SYSTEMS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#49-file-without-authorized-advertising-systems)	
+    - 4.9 [FILE WITHOUT AUTHORIZED ADVERTISING SYSTEMS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#49-file-without-authorized-advertising-systems)	
 - 5. [IMPLEMENTER’S NOTES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#5-implementers-notes)	
     - 5.1 [VERSION](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#51-version)	
     - 5.2 [GUIDANCE BY PARTY](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#52-guidance-by-party)	
