@@ -40,39 +40,30 @@ THE STANDARDS, THE SPECIFICATIONS, THE MEASUREMENT GUIDELINES, AND ANY OTHER MAT
  
 ## TABLE OF CONTENTS 
  
-- Abstract 
-- Definitions 
-- Introduction 
-- Solution specification 
-    - App developers 
-        - Provide developer website URL in app store listings 
-        - Publish an app-ads.txt file 
-        - Changing the developer website URL for an app 
-        - Optionally indicating that there are no authorized sellers 
-    - Ad networks/sell-side platforms (aka “bid request issuers”) 
-        - Include the storeurl parameter within bid requests 
-    - App stores 
-        - Publish structured app information 
-    - Authorized seller verifiers 
-        - Identify app store listing URLs for apps offering inventory 
-        - Crawl app listing pages in app stores 
-        - Translate developer URL to an app-ads.txt path 
-        - Crawl and interpret app-ads.txt file 
-        - Requirements for implementing advertising systems 
-        - Authoritative and canonical representation in app stores Reporting 
-- Implementer notes 
-- Limitations and constraints 
-- Appendix A: Developer URL canonicalization test cases 
-        - Test handling of a typical .com domain 
-        - Test handing of two-level public suffix 
-        - Test handling of a newer country public suffix registerable namespace 
-- Appendix B: Developer URL to app-ads.txt file URL test cases 
-        - Test baseline developer URL 
-        - Test developer URL with ignored www. subdomain 
-        - Test “m.” developer URL with ignored m. subdomain 
-        - Test developer URL with subdomain 
-        - Test developer URL with multiple subdomains 
-        - Test developer URL with subdomain on a multipart public suffix 
+- [Abstract](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#abstract) 
+- [Definitions](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#definitions) 
+- [Introduction](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#introduction) 
+- [Solution specification](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#solution-specification) 
+    - [App developers](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#app-developers) 
+        - [Provide developer website URL in app store listings](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#provide-developer-website-url-in-app-store-listings) 
+        - [Publish an app-ads.txt file](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#publish-an-app-adstxt-file) 
+        - [Changing the developer website URL for an app](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#changing-the-developer-website-url-for-an-app) 
+        - [Optionally indicating that there are no authorized sellers](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#optionally-indicating-that-there-are-no-authorized-sellers) 
+    - [Ad networks/sell-side platforms (aka “bid request issuers”)](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#ad-networkssell-side-platforms-aka-bid-request-issuers) 
+        - [Include the storeurl parameter within bid requests](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#include-the-storeurl-parameter-within-bid-requests) 
+    - [App stores](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#app-stores) 
+        - [Publish structured app information](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#publish-structured-app-information) 
+    - [Authorized seller verifiers](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#authorized-seller-verifiers) 
+        - [Identify app store listing URLs for apps offering inventory](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#identify-app-store-listing-urls-for-apps-offering-inventory)
+        - [Crawl app listing pages in app stores](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#crawl-app-listing-pages-in-app-stores) 
+        - [Translate developer URL to an app-ads.txt path](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#translate-developer-url-to-an-app-adstxt-path)
+        - [Crawl and interpret app-ads.txt file](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#crawl-and-interpret-app-adstxt-file) 
+        - [Requirements for implementing advertising systems](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#requirements-for-implementing-advertising-systems) 
+        - [Authoritative and canonical representation in app stores Reporting](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#authoritative-and-canonical-representation-in-app-stores) 
+- [Implementer notes](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#implementer-notes) 
+- [Limitations and constraints](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#limitations-and-constraints) 
+- [Appendix A: Developer URL canonicalization test cases](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#appendix-a-developer-url-canonicalization-test-cases) 
+- [Appendix B: Developer URL to app-ads.txt file URL test cases ](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#appendix-b-developer-url-to-app-adstxt-file-url-test-cases)
  
 ## Abstract 
 
@@ -124,7 +115,7 @@ This specification relies on the presence of a developer website URL within the 
 
 Publishing a website and providing its URL is required for the app’s ad inventory to participate in the authorized seller scheme. 
  
-Using this website URL, interested crawlers will derive a path and attempt to crawl an app-ads.txt file on the corresponding domain.  Please see the “translate developer URL to an appads.txt path” section for detailed description of how verifiers will derive the location of an “/appads.txt” path from the published developer URL.  Also see Appendix B for examples of how developer website URLs will be translated to app-ads.txt URLs and the order in which subdomains will be searched for the file. 
+Using this website URL, interested crawlers will derive a path and attempt to crawl an app-ads.txt file on the corresponding domain.  Please see the “[translate developer URL to an appads.txt path](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#translate-developer-url-to-an-app-adstxt-path)” section for detailed description of how verifiers will derive the location of an “/appads.txt” path from the published developer URL.  Also see [Appendix B](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#appendix-b-developer-url-to-app-adstxt-file-url-test-cases) for examples of how developer website URLs will be translated to app-ads.txt URLs and the order in which subdomains will be searched for the file. 
 
 #### Publish an app-ads.txt file 
 
@@ -182,7 +173,7 @@ Authorized seller verifiers should determine the app store listing URLs as appro
 
 #### Crawl app listing pages in app stores 
 
-Crawl the HTML pages as specified by the storeurl values of interest.  Obtain the developer_url, store_id, and bundle_id properties from the HTML `<meta>` tags described in the App Stores section above, using an appropriate HTML parsing solution to extract the values. 
+Crawl the HTML pages as specified by the storeurl values of interest.  Obtain the developer_url, store_id, and bundle_id properties from the HTML `<meta>` tags described in the [App Stores](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/app-ads.txt.md#app-stores) section above, using an appropriate HTML parsing solution to extract the values. 
  
 Limit crawling so that unique app store URLs get crawled no more frequently than weekly and honor constraints in the store's robots.txt file. Verifiers should only crawl listings for apps where the verifier is actively receiving ad impression opportunities, rather than crawling the entire store inventory.  Outside of the initial app-ads.txt adoption period, we do not anticipate that developers will change app developer URLs frequently, and many URLs will rarely change if at all. 
  
