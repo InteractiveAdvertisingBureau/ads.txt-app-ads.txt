@@ -29,48 +29,50 @@ Jill Wittkopp, Sr. Director Product, IAB Tech Lab
   
 ## TABLE OF CONTENTS  
  
-- ABOUT IAB TECH LAB	
-- 2. INTRODUCTION	
-    - 2.1 CHANGE LOG	
-- 3. SPECIFICATION	
-    - 3.1 ACCESS METHOD	
-    - 3.2 FILE FORMAT	
-        - 3.2.1 FILES WITHOUT AUTHORIZED ADVERTISING SYSTEM RECORDS	
-    - 3.3 THE DATA RECORD	
-    - 3.4 SYNTAX DEFINITION	
-        - 3.4.1 COMMENTS	
-        - 3.4.2 THE RECORD	 
-        - 3.4.3 EXTENSION FIELDS	
-    - 3.5 VARIABLE DECLARATION RECORDS	
-        - 3.5.1 SUPPORTED VARIABLES	
-    - 3.6 EXPIRATION	
-- 4. EXAMPLES	
-    - 4.1 SINGLE SYSTEM DIRECT	
-    - 4.2 SINGLE SYSTEM RESELLER	
-    - 4.3 MULTIPLE SYSTEMS AND RESELLERS	
-    - 4.4 CONTACT RECORDS	
-    - 4.5 SUBDOMAIN REFERRAL	
-    - 4.6 INVENTORYPARTNERDOMAIN REFERRAL	
-    - 4.9 FILE WITHOUT AUTHORIZED ADVERTISING SYSTEMS	
-- 5. IMPLEMENTER’S NOTES	
-    - 5.1 VERSION	
-    - 5.2 GUIDANCE BY PARTY	
-        - 5.2.1 SSP/EXCHANGE	
-        - 5.2.2 DSP	
-        - 5.2.3 PUBLISHERS	
-    - 5.3 INTEROPERABILITY	
-    - 5.4 SECURITY	
-    - 5.5 SUBDOMAIN DIRECTIVES	
-    - 5.6 ADS.TXT CRAWLERS	
-    - 5.7 INVENTORYPARTNERDOMAIN DIRECTIVES	
-    - 5.8. OWNERDOMAIN DIRECTIVE	
-    - 5.9 MANAGERDOMAIN DIRECTIVE	
-- 6. SCOPE AND FUTURE DIRECTIONS 
-    - 6.1 SCOPE	
-    - 6.2 OPEN ISSUES	
-    - 6.3 FUTURE DIRECTIONS	
-- 7. ACKNOWLEDGEMENTS	
-- 8. REFERENCES	
+- [ABOUT IAB TECH LAB](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#about-iab-tech-lab)	
+- 2. [INTRODUCTION](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#2-introduction)	
+    - 2.1 [CHANGE LOG](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#21-change-log)	
+- 3. [SPECIFICATION](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#3-specification)	
+    - 3.1 [ACCESS METHOD](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#31-access-method)	
+    - 3.2 [FILE FORMAT](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#32-file-format)	
+        - 3.2.1 [FILES WITHOUT AUTHORIZED ADVERTISING SYSTEM RECORDS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#321-files-without-authorized-advertising-system-records)	
+    - 3.3 [THE DATA RECORD](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#33-the-data-record)	
+    - 3.4 [SYNTAX DEFINITION](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#34-syntax-definition)	
+        - 3.4.1 [COMMENTS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#341-comments)	
+        - 3.4.2 [THE RECORD](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#342-the-record)	 
+        - 3.4.3 [EXTENSION FIELDS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#343-extension-fields)	
+    - 3.5 [VARIABLE DECLARATION RECORDS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#35-variable-declaration-records)	
+        - 3.5.1 [SUPPORTED VARIABLES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#351-supported-variables)	
+    - 3.6 [EXPIRATION	](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#36-expiration)
+- 4. [EXAMPLES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#4-examples)	
+    - 4.1 [SINGLE SYSTEM DIRECT](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#41-single-system-direct)	
+    - 4.2 [SINGLE SYSTEM RESELLER](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#42-single-system-reseller)	
+    - 4.3 [MULTIPLE SYSTEMS AND RESELLERS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#43-multiple-systems-and-resellers)	
+    - 4.4 [CONTACT RECORDS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#44-contact-records)	
+    - 4.5 [SUBDOMAIN REFERRAL](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#45-subdomain-referral)	
+    - 4.6 [INVENTORYPARTNERDOMAIN REFERRAL](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#46-inventorypartnerdomain-referral)	
+    - 4.7 [OWNERDOMAIN USAGE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#47-ownerdomain-usage)
+    - 4.8 [MANAGERDOMAIN USAGE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#48-managerdomain-usage)
+    - 4.9 {FILE WITHOUT AUTHORIZED ADVERTISING SYSTEMS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#49-file-without-authorized-advertising-systems)	
+- 5. [IMPLEMENTER’S NOTES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#5-implementers-notes)	
+    - 5.1 [VERSION](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#51-version)	
+    - 5.2 [GUIDANCE BY PARTY](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#52-guidance-by-party)	
+        - 5.2.1 [SSP/EXCHANGE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#521-sspexchange)	
+        - 5.2.2 [DSP](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#522-dsp)	
+        - 5.2.3 [PUBLISHERS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#523-publishers)	
+    - 5.3 [INTEROPERABILITY](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#53-interoperability)	
+    - 5.4 [SECURITY](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#54-security)	
+    - 5.5 [SUBDOMAIN DIRECTIVES	](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#55-subdomain-directives)
+    - 5.6 [ADS.TXT CRAWLERS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#56-adstxt-crawlers)	
+    - 5.7 [INVENTORYPARTNERDOMAIN DIRECTIVES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#57-inventorypartnerdomain-directives)	
+    - 5.8. [OWNERDOMAIN DIRECTIVE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#58-ownerdomain-directive)	
+    - 5.9 [MANAGERDOMAIN DIRECTIVE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#59-managerdomain-directive)	
+- 6. [SCOPE AND FUTURE DIRECTIONS ](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#6-scope-and-future-directions)
+    - 6.1 [SCOPE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#61-scope)	
+    - 6.2 [OPEN ISSUES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#62-open-issues)	
+    - 6.3 [FUTURE DIRECTIONS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#63-future-directions)	
+- 7. [ACKNOWLEDGEMENTS](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#7-acknowledgements)	
+- 8. [REFERENCES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/ads.txt%20v1.1.md#8-references)	
 
  	 
 ## 1. ABSTRACT 
@@ -511,6 +513,7 @@ The authors would like to thank the original authors of the robots.txt [5][6] fi
 12.	[https://publicsuffix.org/](https://publicsuffix.org/) 
 13.	[https://www.w3schools.com/tags/ref_urlencode.asp](https://www.w3schools.com/tags/ref_urlencode.asp) 
 14.	[http://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-25-FINAL.pdf](http://www.iab.com/wp-content/uploads/2016/03/OpenRTB-API-Specification-Version-25-FINAL.pdf)
-15.	[https://github.com/InteractiveAdvertisingBureau/adstxtcrawler 16. https://publicsuffix.org/list/public_suffix_list.dat](https://github.com/InteractiveAdvertisingBureau/adstxtcrawler 16. https://publicsuffix.org/list/public_suffix_list.dat) 
-17.	[ads.txt explainer doc](https://iabtechlab.com/wp-content/uploads/2021/03/ctv-app-ads-explainer-guide.pdf). 
+15.	[https://github.com/InteractiveAdvertisingBureau/adstxtcrawler](https://github.com/InteractiveAdvertisingBureau/adstxtcrawler)
+16.	[https://publicsuffix.org/list/public_suffix_list.dat](https://publicsuffix.org/list/public_suffix_list.dat) 
+17.	[ads.txt explainer doc](https://iabtechlab.com/wp-content/uploads/2021/03/ctv-app-ads-explainer-guide.pdf) 
 18.	[https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)  
