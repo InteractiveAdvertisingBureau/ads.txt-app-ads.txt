@@ -24,7 +24,7 @@ Duke Dukellis, Director, Product Management, Google; Ian Trider, Director, RTB P
  
 ### IAB Tech Lab Contact: 
 
-Jennifer Derke, Director of Product, Programmatic & Data, IAB Tech Lab openRTB@iabtechlab.com 
+Jill Wittkopp, VP Product, support@iabtechlab.com
  
 ### Contributors and Technical Governance 
  
