@@ -2,11 +2,11 @@
 
 ## TABLE OF CONTENTS  
  
-1. BACKGROUND	
-2. SCOPE
-3. UPDATES TO ADS.TXT & APP-ADS.TXT STANDARD	 
-4. EXAMPLE USE CASES	
-5. IMPLEMENTATION GUIDELINES
+1. [BACKGROUND](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Implementation%20Guidance.md#1-background)	
+2. [SCOPE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Implementation%20Guidance.md#2-scope)
+3. [UPDATES TO ADS.TXT & APP-ADS.TXT STANDARD](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Implementation%20Guidance.md#3-updates-to-adstxt--app-adstxt-standard)	 
+4. [EXAMPLE USE CASES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Implementation%20Guidance.md#4-example-use-cases)	
+5. [IMPLEMENTATION GUIDELINES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Implementation%20Guidance.md#5-implementation-guidelines)
   
 ## 1. Background 
 
