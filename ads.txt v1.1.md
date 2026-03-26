@@ -25,7 +25,7 @@ Justin Adler-Swanberg, Director Marketplace Quality, MediaMath; Paul Bannister, 
   
 ### IAB Tech Lab Lead: 
 
-Jill Wittkopp, Sr. Director Product, IAB Tech Lab 
+Hillary Slattery, Senior Director, Programmatic, Product Management, IAB Tech Lab 
   
 ## TABLE OF CONTENTS  
  
