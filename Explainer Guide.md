@@ -2,23 +2,23 @@
 
 ## TABLE OF CONTENTS 
  
-- BACKGROUND	
-    - SCOPE	
-        - IN SCOPE	
-        - OUT OF SCOPE	
-- UPDATES TO ADS.TXT & APP-ADS.TXT STANDARD	
-- EXAMPLE USE CASES	
-    - CASE A: PROGRAMMER OWNED APP	
-    - CASE B: CONTENT CHANNEL ON VMVPD APP	
-        - BUSINESS SCENARIO B.1	
-        - BUSINESS SCENARIO B.2	
-    - CASE C: PROGRAMMER OWNED APP USING MVPD SIGN-IN (TV EVERYWHERE)	
-- USE CASE IMPLEMENTATION LOGIC	
-- IMPLEMENTATION GUIDELINES FOR CTV/OTT	
-    - CTV APP STORE GUIDANCE	
-    - PUBLISHER GUIDANCE	
-    - SSP/EXCHANGE GUIDANCE	
-    - DSP GUIDANCE	
+- [BACKGROUND](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#background)	
+    - [SCOPE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#scope)
+        - [IN SCOPE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#in-scope)	
+        - [OUT OF SCOPE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#out-of-scope)	
+- [UPDATES TO ADS.TXT & APP-ADS.TXT STANDARD](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#updates-to-adstxt--app-adstxt-standard)	
+- [EXAMPLE USE CASES](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#example-use-cases)	
+    - [CASE A: PROGRAMMER OWNED APP](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#case-a-programmer-owned-app)	
+    - [CASE B: CONTENT CHANNEL ON VMVPD APP](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#case-b-content-channel-on-vmvpd-app)	
+        - [BUSINESS SCENARIO B.1](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#business-scenario-b1)	
+        - [BUSINESS SCENARIO B.2](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#business-scenario-b2)	
+    - [CASE C: PROGRAMMER OWNED APP USING MVPD SIGN-IN (TV EVERYWHERE)](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#case-c-programmer-owned-app-using-mvpd-sign-in-tv-everywhere)	
+- [USE CASE IMPLEMENTATION LOGIC](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#use-case-implementation-logic)	
+- [IMPLEMENTATION GUIDELINES FOR CTV/OTT](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#implementation-guidelines-for-ctvott)	
+    - [CTV APP STORE GUIDANCE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#ctv-app-store-guidance)	
+    - [PUBLISHER GUIDANCE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#publisher-guidance)	
+    - [SSP/EXCHANGE GUIDANCE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#sspexchange-guidance)	
+    - [DSP GUIDANCE](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#dsp-guidance)	
  	 
 ## Background 
 
@@ -72,7 +72,7 @@ To validate these domains, the [(app)ads.txt spec](https://iabtechlab.com/ads-tx
 |---|---|---|
 |inventorypartnerdomain |	Pointer to the domain of the partner (of the site/app owner) with ownership of some portion of ad inventory on the site/app.  The partner’s ads.txt or appads.txt file will be hosted here. |	When a site or an app contains ad inventory that is owned by another partner - the app or site should list all domains for those partners via this directive. |
  
-Please see the example use cases later in this document for how these values work together to validate inventory in the new version of app-ads.txt. 
+Please see the [example use cases](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#example-use-cases) later in this document for how these values work together to validate inventory in the new version of app-ads.txt. 
 
 ## Example Use Cases 
 
@@ -275,7 +275,7 @@ Also see: [OTT/CTV User Agent Guidelines](https://iabtechlab.com/wp-content/uplo
 
 1.	SSPs/Exchanges are required to implement the *app.inventorypartnerdomain* & *site.inventorypartnerdomain* fields from the site and app objects to support the passing of inventory partner domains for pointers to partner ads.txt files, where an inventory partner exists. 
 
-2.	SSPs/Exchanges should support publishers in providing CTV App IDs according to the [OTT/CTV Store Assigned App Identification Guidelines](https://iabtechlab.com/wp-content/uploads/2019/12/OTT_Store_Assigned_App_Identification_Guidelines_IABTechLab_2019-12.pdf)* as well as assist them in passing additional contextual & environment signals (as noted in Publisher Guidance section) via the appropriate existing or extension OpenRTB fields. 
+2.	SSPs/Exchanges should support publishers in providing CTV App IDs according to the [OTT/CTV Store Assigned App Identification Guidelines](https://iabtechlab.com/wp-content/uploads/2019/12/OTT_Store_Assigned_App_Identification_Guidelines_IABTechLab_2019-12.pdf)* as well as assist them in passing additional contextual & environment signals (as noted in [Publisher Guidance](https://github.com/InteractiveAdvertisingBureau/ads.txt-app-ads.txt/blob/main/Explainer%20Guide.md#publisher-guidance) section) via the appropriate existing or extension OpenRTB fields. 
 
 **Failure to comply with the guidelines will prevent the DSP from verifying the app-ads.txt information.*
 
