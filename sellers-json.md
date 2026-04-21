@@ -19,22 +19,22 @@ THE STANDARDS, THE SPECIFICATIONS, THE MEASUREMENT GUIDELINES, AND ANY OTHER MAT
  
 ## Table of Contents 
  
-    - Abstract	 
-- About IAB Tech Lab	
-    - Introduction	
-    - Change Log	
-- SPECIFICATION	
-    - ACCESS METHOD	
-    - FILE FORMAT	
-    - EXPIRATION	
-    - Proposed implementation	
-    - Object specifications	
-        - Object: Parent	
-        - Sellers.json object: Identifier	
-        - Sellers.json object: Seller	
-    - Enumerated List Specification	
-        - Identifier Names	
-    - Sample File Contents 
+- [Abstract	](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#abstract) 
+- [About IAB Tech Lab](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#about-iab-tech-lab)	
+    - [Introduction](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#introduction)	
+    - [Change Log	](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#change-log)
+- [SPECIFICATION](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#specification)	
+    - [ACCESS METHOD](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#access-method)	
+    - [FILE FORMAT](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#file-format)	
+    - [EXPIRATION](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#expiration)
+    - [Proposed implementation](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#implementation)	
+    - [Object specifications](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#object-specifications)	
+        - [Object: Parent](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#object-parent)	
+        - [Sellers.json object: Identifier](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#sellersjson-object-identifier)	
+        - [Sellers.json object: Seller	](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#sellersjson-object-seller)
+    - [Enumerated List Specification	](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#enumerated-list-specification)
+        - [Identifier Names](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#identifier-names)	
+    - [Sample File Contents](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#sample-file-contents) 
 
 ## Introduction 
 
@@ -114,7 +114,7 @@ The Parent object is the top-level object of a Sellers.json file. It is a contai
 
 An identifier is an arbitrary name/value pair that is used to communicate common values such as business identifiers, certification identifiers, or any other identifier that a consuming system might need to better interoperate with the seller. 
  
-Standard Identifiers are listed in the section Identifier Names below. 
+Standard Identifiers are listed in the section [Identifier Names](https://github.com/InteractiveAdvertisingBureau/Supply-Chain-Validation/blob/main/sellers-json.md#identifier-names) below. 
  
 |Attribute |	Type |	Description |
 |---|---|---|
